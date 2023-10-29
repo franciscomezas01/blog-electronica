@@ -1,8 +1,8 @@
 :root{
     --blanco: #ffffff; 
     --oscuro: #212121; 
-    --primario: #e69fe3; 
-    --secundario: #d1c5d0;
+    --primario: #6874da; 
+    --secundario: #0a081a;
     --gris: #757575;
 
 }
@@ -10,6 +10,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 *, *:before, *:after{
     box-sizing: inherit;
@@ -129,6 +130,10 @@ h1,h2,h3 {
 
 .contenido-hero h2, .contenido-hero p {
     color: var(--blanco);
+}
+.servicios, .navegacion-principal,.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 @media (min-width: 768px) {
